@@ -1,0 +1,17 @@
+
+
+
+
+
+LiCSAtmo is being run for campi_flegrei_022D at 24/01/2026 21:07:34
+****************************************
+Entering post mortem debugging...
+****************************************
+*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
+> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(155)[0;36mLiCSAtmo_correction[1;34m()[0m
+[1;32m    153 [1;33m    [1;31m# 2: Open the data[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    154 [1;33m    displacement_r3, tbaseline_info = import_insar_data(
+[0m[1;32m--> 155 [1;33m        [0mvolcano[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    156 [1;33m        [0mlocation_dir[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    157 [1;33m        [0mlocation[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0m
