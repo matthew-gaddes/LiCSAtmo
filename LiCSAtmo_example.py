@@ -110,10 +110,12 @@ def LiCSAtmo_correction(
     if licsalert_pkg_dir is not None:
         sys.path.append(str(licsalert_pkg_dir))                            
         
+    from licsatmo.data_importing import import_insar_data
+
 
     from licsalert.monitoring_functions import read_config_file
     from licsalert.monitoring_functions import manual_mask_wrapper
-    from licsalert.data_importing import import_insar_data
+    
     from licsalert.data_exporting import save_licsalert_aux_data
     from licsalert.licsalert import LiCSAlert_preprocessing, LiCSAlert#, shorten_LiCSAlert_data
     from licsalert.licsalert import write_volcano_status, load_or_create_ICASAR_results
@@ -295,7 +297,8 @@ licsalert_settings = {"figure_type"         : 'png',                            
 
                      
 
-icasar_settings = {"n_pca_comp_start"       : 6,                                                  
+icasar_settings = {"sica_tica"              : 'sica',
+                   "n_pca_comp_start"       : 6,                                                  
                    "n_pca_comp_stop"        : 7,                                                  
                    "bootstrapping_param"    : (200, 0),                              # (number of runs with bootstrapping, number of runs without bootstrapping)                    "hdbscan_param" : (35, 10),                        # (min_cluster_size, min_samples)
                     "tsne_param"             : (30, 12),                                       # (perplexity, early_exaggeration)
