@@ -219,6 +219,11 @@ def LiCSAtmo_correction(
     tbaseline_info=calculate_all_temporal_info(tbaseline_info)
     
 
+    # set to end of time series to avoid significant crop in time.  
+    baseline_end = licsalert_date_obj(
+                tbaseline_info['acq_dates'][-1],
+                tbaseline_info['acq_dates'],
+                )
 
    
     # determine the time series to be used for ICA.  Note that this is
@@ -232,7 +237,7 @@ def LiCSAtmo_correction(
         icasar_settings['sica_tica'],
         displacement_r3,
         tbaseline_info,
-        licsalert_settings['baseline_end'],
+        baseline_end,
         location_dir,
         licsalert_settings['figure_type'],
         interactive=False,                # useful to set to True to debug
@@ -254,12 +259,30 @@ def LiCSAtmo_correction(
     # note that displacement_r2_ica contains mixtures_mc, which are the 
     # input ifgs either mean centered in time or space, depending on 
     # how the sica_tica flag is set
-    # note that this now only accepts non-mean-centered data
+    # note that this now only accepts non-mean-centered data    
+    # determine if we need to run ICASAR
+    try:
+        ICASAR_files = [f.name for f in os.scandir(location_dir / 'ICASAR_results')] 
+    except:
+        ICASAR_files = []
+    if 'ICASAR_results.pkl' in ICASAR_files:
+        run_ICASAR = False
+        print("\nExisting ICASAR results were found, so these will "
+              "not be recalculated.  Delete ICASAR_results.pkl from "
+              "the ICASAR_results directory to avoid this. \n ")
+    else:
+        run_ICASAR = True    
+    
+    
+    # # update naming of arg here
+    # if icasar_settings['figures'] == 'both':
+    #     icasar_settings['figures'] = "png+window"
+        
     outputs = load_or_create_ICASAR_results(
-        True,
+        run_ICASAR,
         displacement_r2_ica,
         tbaseline_info_ica,
-        licsalert_settings['baseline_end'],
+        baseline_end,
         location_dir / "ICASAR_results", 
         icasar_settings
     )        
@@ -282,14 +305,18 @@ def LiCSAtmo_correction(
         icasar_settings['sica_tica']
         )
 
+    pdb.set_trace()
+    
     sys.stdout = original                                                                                                                                      # return stdout to be normal.  
     f_run_log.close()                                                                                                                                          # and close the log file.  
 
 
+    return []
+
 #%%
 
 
-licsalert_settings = {"figure_type"         : 'png',                             # either 'window' or 'png' (to save as pngs), or 'both'
+licsalert_settings = {"figure_type"         : 'both',                             # either 'window' or 'png' (to save as pngs), or 'both'
                       "downsample_run"      : 0.3,                                     # data can be downsampled to speed things up
                       "downsample_plot"     : 0.5,                               # and a 2nd time for fast plotting.  Note this is applied to the restuls of the first downsampling, so is compound
                       }
@@ -322,6 +349,44 @@ LiCSAtmo_correction(
     icasar_settings = icasar_settings,
     licsbas_settings = licsbas_settings,
     )
+
+
+
+#%%
+
+# licsalert_settings = {"figure_type"         : 'both',                             # either 'window' or 'png' (to save as pngs), or 'both'
+#                       "downsample_run"      : 0.3,                                     # data can be downsampled to speed things up
+#                       "downsample_plot"     : 0.5,                               # and a 2nd time for fast plotting.  Note this is applied to the restuls of the first downsampling, so is compound
+#                       }
+                      
+
+                     
+
+# icasar_settings = {"sica_tica"              : 'tica',
+#                    "n_pca_comp_start"       : 6,                                                  
+#                    "n_pca_comp_stop"        : 7,                                                  
+#                    "bootstrapping_param"    : (200, 0),                              # (number of runs with bootstrapping, number of runs without bootstrapping)                    "hdbscan_param" : (35, 10),                        # (min_cluster_size, min_samples)
+#                     "tsne_param"             : (30, 12),                                       # (perplexity, early_exaggeration)
+#                     "ica_param"              : (1e-2, 150),                                     # (tolerance, max iterations)
+#                     "hdbscan_param"          : (100,10),                                    # (min_cluster_size, min_samples) Discussed in more detail in Mcinnes et al. (2017). min_cluster_size sets the smallest collection of points that can be considered a cluster. min_samples sets how conservative the clustering is. With larger values, more points will be considered noise. 
+#                     "ifgs_format"            : 'cum',                                  # can be 'all', 'inc' (incremental - short temporal baselines), or 'cum' (cumulative - relative to first acquisition)
+#                     "load_fastICA_results"   : True}
+
+# licsbas_settings = {"filtered"               : False,
+#                     "date_start"            : None,
+#                     "date_end"              : None,
+#                     'mask_type'             : 'licsbas',                        # "dem" or "licsbas"
+#                     'crop_pixels'           : None}
+
+
+# LiCSAtmo_correction(
+#     outdir = Path("./"), 
+#     location = "campi_flegrei_022D_tica",
+#     licsbas_dir = Path("./example_data/022D_04826_121209_campi_flegrei"),
+#     licsalert_settings = licsalert_settings, 
+#     icasar_settings = icasar_settings,
+#     licsbas_settings = licsbas_settings,
+#     )
 
 
 
