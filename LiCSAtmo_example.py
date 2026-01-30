@@ -310,23 +310,23 @@ def LiCSAtmo_correction(
         src_n = int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])
 
         # remove the topo. correlated APS in space and time
-        A2 = np.delete(A, src_n, axis=1)
-        S2 = np.delete(S, src_n, axis=0)
+        A_corrected = np.delete(A, src_n, axis=1)
+        S_corrected = np.delete(S, src_n, axis=0)
         
         # reconstruct the time series 
-        X_r2=A@S
+        X_r2_corrected = A_corrected @ S_corrected
 
         means=np.repeat(
             displacement_r3['cum_ma'].means.space[:, np.newaxis],
-            X_r2.shape[1],
+            X_r2_corrected.shape[1],
             axis=1,
             )
         
         # remove the mean centering in space
-        X_r2 += means
+        X_r2_corrected += means
 
         # convert 
-        X_r3 = r2_to_r3(X_r2, mask_icasar)
+        X_r3 = r2_to_r3(X_r2_corrected, mask_icasar)
 
 
         plot_ifgs_corrected_residual(
