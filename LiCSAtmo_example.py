@@ -111,23 +111,21 @@ def LiCSAtmo_correction(
         sys.path.append(str(licsalert_pkg_dir))                            
         
     from licsatmo.data_importing import import_insar_data
-
+    from licsatmo.licsatmo import licsatmo_preprocessing
+    from licsatmo.aux import r2_to_r3
 
     from licsalert.monitoring_functions import read_config_file
     from licsalert.monitoring_functions import manual_mask_wrapper
-    
     from licsalert.data_exporting import save_licsalert_aux_data
-    from licsalert.licsalert import LiCSAlert_preprocessing, LiCSAlert#, shorten_LiCSAlert_data
-    from licsalert.licsalert import write_volcano_status, load_or_create_ICASAR_results
+    from licsalert.licsalert import load_or_create_ICASAR_results
     from licsalert.licsalert import licsalert_date_obj
     from licsalert.licsalert import construct_baseline_ts
     from licsalert.temporal import calculate_all_temporal_info
-    from licsalert.aux import Tee, find_nearest_date, col_to_ma
-    from licsalert.aux import update_mask
-    # from licsalert.downsample_ifgs import downsample_ifgs
-    from licsalert.plotting import LiCSAlert_figure, LiCSAlert_epoch_figures
-    from licsalert.plotting import LiCSAlert_aux_figures, LiCSAlert_mask_figure
-    from licsalert.plotting import create_manual_mask
+    from licsalert.aux import Tee# , col_to_ma    
+    from licsalert.plotting import LiCSAlert_aux_figures
+    
+    
+
     
     
     # 1: Log all outputs to a file for that location:
@@ -148,7 +146,8 @@ def LiCSAtmo_correction(
     # if using jasmin data, import the settings for that volcano
     if licsbas_jasmin_dir is not None:
         outputs = read_config_file(
-            location_dir /  "LiCSAlert_settings.txt")                                          
+            location_dir /  "LiCSAlert_settings.txt"
+            )                                          
         (licsalert_settings, icasar_settings, licsbas_settings) = outputs
         del outputs
 
@@ -184,7 +183,7 @@ def LiCSAtmo_correction(
     # and once for plotting (to make very small images)
     # also mean centre in time and space, making 'cum_ma' a mean centered array
     # (a custom LiCSAlert object)
-    displacement_r3 = LiCSAlert_preprocessing(
+    displacement_r3 = licsatmo_preprocessing(
         displacement_r3,
         tbaseline_info,
         icasar_settings['sica_tica'],                                                    
@@ -193,39 +192,18 @@ def LiCSAtmo_correction(
         )
     
     
-    
-    # save minimal data for example
-    # import pickle
-    # displacement_r3_example = {}
-    # displacement_r3_example['mask']=displacement_r3['mask']
-    # displacement_r3_example['dem']=displacement_r3['dem']
-    # displacement_r3_example['lons_mg']=displacement_r3['lons_mg']
-    # displacement_r3_example['lats_mg']=displacement_r3['lats_mg']
-    # displacement_r3_example['cum_ma']=displacement_r3['cum_ma'].original
-    # with open('cordon_culle_ts.pkl', 'wb') as f:
-    #     pickle.dump(displacement_r3_example, f)
-    #     pickle.dump(tbaseline_info, f)
-    
-    # pdb.set_trace()
-    
-    # # save all the data
-    # import cloudpickle
-    # with open('cordon_culle_ts.pkl', 'wb') as f:
-    #     cloudpickle.dump(displacement_r3, f)
-    #     cloudpickle.dump(tbaseline_info, f)
-    
-    # add the temporal baselines (in days) for single master ifgs. relative
-    # to the first acquisition
+        # add the temporal baselines (in days) for single master ifgs. relative
+     # to the first acquisition
     tbaseline_info=calculate_all_temporal_info(tbaseline_info)
+     
     
-
-    # set to end of time series to avoid significant crop in time.  
+     # set to end of time series to avoid significant crop in time.  
     baseline_end = licsalert_date_obj(
                 tbaseline_info['acq_dates'][-1],
                 tbaseline_info['acq_dates'],
                 )
-
-   
+    
+    
     # determine the time series to be used for ICA.  Note that this is
     # no longer all epochs, and is instead a subset that compromises
     # temporal resolution and the number of pixels retained.  
@@ -234,15 +212,15 @@ def LiCSAtmo_correction(
     # mean centereing is redone here.  Not stricly needed in space, 
     # but needed in time when epochs are dropped
     displacement_r2_ica, tbaseline_info_ica = construct_baseline_ts(
-        icasar_settings['sica_tica'],
-        displacement_r3,
-        tbaseline_info,
-        baseline_end,
-        location_dir,
-        licsalert_settings['figure_type'],
-        interactive=False,                # useful to set to True to debug
+         icasar_settings['sica_tica'],
+         displacement_r3,
+         tbaseline_info,
+         baseline_end,
+         location_dir,
+         licsalert_settings['figure_type'],
+         interactive=False,                # useful to set to True to debug
     )
-    
+     
     # check for the unusual case that there are fewer pixels than pca_comps 
     # requested
     if icasar_settings['sica_tica'] == 'sica':
@@ -254,7 +232,7 @@ def LiCSAtmo_correction(
                 "components.  The suggest there are very, very few "
                 "coherent pixels.  "
                 )
-        
+         
     # either load ICA from previous run, or compute it.  
     # note that displacement_r2_ica contains mixtures_mc, which are the 
     # input ifgs either mean centered in time or space, depending on 
@@ -273,6 +251,7 @@ def LiCSAtmo_correction(
     else:
         run_ICASAR = True    
     
+       
     
     # # update naming of arg here
     # if icasar_settings['figures'] == 'both':
@@ -305,7 +284,136 @@ def LiCSAtmo_correction(
         icasar_settings['sica_tica']
         )
 
+
+    if icasar_settings['sica_tica'] == 'sica':
+        
+        from licsalert.licsalert import bss_components_inversion_per_epoch
+        
+        # fit each epoch using the ICs.  Note that this function will
+        # handle masks that change at each epoch by finding the set of pixels
+        # that are valid in both the epoch and the ICs.  
+        tcs_c, d_hat, d_resid=bss_components_inversion_per_epoch(
+                icasar_sources,
+                mask_icasar,
+                displacement_r3['cum_ma'].mean_centered.space,
+                cumulative=False,
+                )
+        
+        
+        # discard the topo correlated sources
+        A = tcs_c
+        S = icasar_sources
+        
+        # get hte topo correlated source_n
+        src_n = int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])
+
+        # remove the topo. correlated APS in space and time
+        A2 = np.delete(A, src_n, axis=1)
+        S2 = np.delete(S, src_n, axis=0)
+        
+        # reconstruct the time series 
+        X_r2=A@S
+
+        means=np.repeat(
+            displacement_r3['cum_ma'].means.space[:, np.newaxis],
+            X_r2.shape[1],
+            axis=1,
+            )
+        
+        # remove the mean centering in space
+        X_r2 += means
+
+        # convert 
+        
+        X_r3 = r2_to_r3(X_r2, mask_icasar)
+
+
+
+        import licsatmo
+        from licsatmo.plotting import plot_ifgs_corrected_residual
+        
+        
+        plot_ifgs_corrected_residual(
+            displacement_r3['cum_ma'].original,
+            X_r3,
+            plot_n=-1,
+            cmap="viridis",
+            titles=("Original", "Reconstruciton (without APS)", "Residual"),
+            robust=False,
+            robust_pct=(2, 98),
+            show_axes=False,
+            )
+
+        plot_n = -1
+        resid = displacement_r3['cum_ma'].original - X_r3
+        f, axes = plt.subplots(1,3)
+        axes[0].matshow(displacement_r3['cum_ma'].original[plot_n,])
+        axes[1].matshow(X_r3[plot_n,])
+        axes[2].matshow(resid[plot_n,])
+
+
+        
+        pdb.set_trace()
+        
+
+
+
+    
+    
+    def calculate_cum_time_courses(
+            r3_data,
+            sources,
+            sources_mask,
+            sica_tica,
+            ):
+        """
+        """
+        
+        if sica_tica == 'sica':
+            # iterate over each time step
+            
+            ss_components_inversion_per_epoch(
+                    sources,
+                    mask_sources,
+                    ifgs,
+                    cu
+                    )
+            
+            for r2_ifg in r3_data.mean_centered.space:
+                pdb.set_trace()
+                mask_epoch = r2_ifg.mask
+                
+                # find pixels in both ICs and this epoch
+                mask_combined=np.logical_or(mask_epoch, sources_mask)
+            
+            
+                m, d_hat, d_resid = bss_components_inversion(
+                        sources,             # n_ics x n_pixels if sica
+                        displacement_r3['cum_ma'].mean_centered.space,
+                        cumulative=False,
+                        mask = None,
+                        )
+            
+        elif sica_tica == 'tica':
+            # iterate over each pixel
+            pass
+    
+    calculate_cum_time_courses(
+        displacement_r3['cum_ma'],
+        icasar_sources, 
+        mask_icasar,
+        icasar_settings['sica_tica'],
+        )
+    
+    
     pdb.set_trace()
+    # take ICS, perform inversion to fit correctly mean centered data
+    # discard A col and S row based on ic_labels
+    # X = AS
+    # add means back
+    
+    #displacement_r3['cum_ma'].means.space.
+    
     
     sys.stdout = original                                                                                                                                      # return stdout to be normal.  
     f_run_log.close()                                                                                                                                          # and close the log file.  
