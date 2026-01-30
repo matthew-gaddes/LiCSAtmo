@@ -113,6 +113,8 @@ def LiCSAtmo_correction(
     from licsatmo.data_importing import import_insar_data
     from licsatmo.licsatmo import licsatmo_preprocessing
     from licsatmo.aux import r2_to_r3
+    from licsatmo.plotting import plot_ifgs_corrected_residual
+    from licsatmo.plotting import plot_pixel_history_two_r3
 
     from licsalert.monitoring_functions import read_config_file
     from licsalert.monitoring_functions import manual_mask_wrapper
@@ -324,15 +326,9 @@ def LiCSAtmo_correction(
         X_r2 += means
 
         # convert 
-        
         X_r3 = r2_to_r3(X_r2, mask_icasar)
 
 
-
-        import licsatmo
-        from licsatmo.plotting import plot_ifgs_corrected_residual
-        
-        
         plot_ifgs_corrected_residual(
             displacement_r3['cum_ma'].original,
             X_r3,
@@ -343,77 +339,23 @@ def LiCSAtmo_correction(
             robust_pct=(2, 98),
             show_axes=False,
             )
-
-        plot_n = -1
-        resid = displacement_r3['cum_ma'].original - X_r3
-        f, axes = plt.subplots(1,3)
-        axes[0].matshow(displacement_r3['cum_ma'].original[plot_n,])
-        axes[1].matshow(X_r3[plot_n,])
-        axes[2].matshow(resid[plot_n,])
-
-
         
-        pdb.set_trace()
-        
-
-
-
-    
-    
-    def calculate_cum_time_courses(
-            r3_data,
-            sources,
-            sources_mask,
-            sica_tica,
-            ):
-        """
-        """
-        
-        if sica_tica == 'sica':
-            # iterate over each time step
-            
-            ss_components_inversion_per_epoch(
-                    sources,
-                    mask_sources,
-                    ifgs,
-                    cu
-                    )
-            
-            for r2_ifg in r3_data.mean_centered.space:
-                pdb.set_trace()
-                mask_epoch = r2_ifg.mask
-                
-                # find pixels in both ICs and this epoch
-                mask_combined=np.logical_or(mask_epoch, sources_mask)
-            
-            
-                m, d_hat, d_resid = bss_components_inversion(
-                        sources,             # n_ics x n_pixels if sica
-                        displacement_r3['cum_ma'].mean_centered.space,
-                        cumulative=False,
-                        mask = None,
-                        )
-            
-        elif sica_tica == 'tica':
-            # iterate over each pixel
-            pass
-    
-    calculate_cum_time_courses(
-        displacement_r3['cum_ma'],
-        icasar_sources, 
-        mask_icasar,
-        icasar_settings['sica_tica'],
+        fig, axes = plot_pixel_history_two_r3(
+            displacement_r3["cum_ma"].original,
+            X_r3,
+            x=51, y=26,
+            acq_dates=tbaseline_info["acq_dates"],
+            labels=("Observed", "Model"),
+            window=11,
         )
-    
-    
+        
+
+        
+    elif icasar_settings['sica_tica'] == 'tica':
+        pass
+
     pdb.set_trace()
-    # take ICS, perform inversion to fit correctly mean centered data
-    # discard A col and S row based on ic_labels
-    # X = AS
-    # add means back
-    
-    #displacement_r3['cum_ma'].means.space.
-    
+
     
     sys.stdout = original                                                                                                                                      # return stdout to be normal.  
     f_run_log.close()                                                                                                                                          # and close the log file.  
