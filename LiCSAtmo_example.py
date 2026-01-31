@@ -441,8 +441,8 @@ licsbas_settings = {"filtered"               : False,
 
 LiCSAtmo_correction(
     outdir = Path("./"), 
-    location = "campi_flegrei_022D_tica",
-    licsbas_dir = Path("./example_data/022D_04826_121209_campi_flegrei"),
+    location = "vesuvius_022D_tica",
+    licsbas_dir = Path("./example_data/022D_04826_121209_vesuvius"),
     licsalert_settings = licsalert_settings, 
     icasar_settings = icasar_settings,
     licsbas_settings = licsbas_settings,
