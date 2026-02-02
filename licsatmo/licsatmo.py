@@ -321,6 +321,209 @@ def licsatmo_preprocessing(
    
     return displacement_r3
 
-##############################################################################
+#############################################################################
+
+# def construct_baseline_ts(
+#         sica_tica, 
+#         displacement_r3, 
+#         tbaseline_info,
+#         volcano_dir,
+#         figures='png',
+#         interactive=False
+#         ):
+#     """
+#     A function to prepare the baseline time series for ICA.  First step
+#     is dropping some epochs that cause many pixels to be lost, 
+    
+#     Note that data mustn't be mean centered.  
+    
+#     Inputs:
+#         sica_tica | str | either 'sica' or 'tica'
+#         displacement_r3 | dict | time series info as rank 3
+#         tbaseline_info | dict | temporal info associated with time series. 
+#         volcano_dir | Path | outdir for current volcano.  
+#         figures | str | png, window, or both. 
+#         interactive | boolean | interacitve figure to explore how the trade off
+#                                 between number of epochs and number of pixels. 
+#                                 (i.e. few epochs means lots of pixels, lots of 
+#                                  epochs means few pixels, usually)
+                                
+#     Returns:
+        
+#     History:
+#         2025_07_?? | MEG | Written.  
+    
+#     """
+#     import numpy as np
+    
+
+#     from licsalert.temporal import daisy_chain_from_acquisitions
+#     from licsalert.data_importing import ifg_timeseries
+    
+    
 
     
+#     # 1: select a subset of the epochs to create a compromise between lots of 
+#     # pixels and lots of epochs (i.e. drop the epochs that cause lots of 
+#     # pixels to be lost when a consistent mask through time is sought)
+#     # this returns cumulative displacements that are not mean centered
+#     displacement_r2_ica, tbaseline_info_ica = automatic_pixel_epoch_selection(
+#         displacement_r3,
+#         tbaseline_info,
+#         volcano_dir,
+#         figures,
+#         interactive,
+#         )
+    
+#     # also copy some auxilliary info to the new array
+#     for key in ['dem', 'lons_mg', 'lats_mg']:
+#         displacement_r2_ica[key] = displacement_r3[key]
+    
+#     # rename the output to be more readable
+#     displacement_r2_ica['cumulative'] = displacement_r2_ica['ifgs']
+    
+#     del displacement_r2_ica['ifgs']
+    
+#     # f, ax = plt.subplots()
+#     # ax.matshow(displacement_r2_ica['cumulative'])
+#     # ax.set_aspect('auto')
+    
+#     # create the incremental displacments
+#     displacement_r2_ica['incremental'] = np.diff(
+#         displacement_r2_ica['cumulative'],
+#         axis = 0
+#         )
+    
+#     # calculate the dates of the incremental ifgs
+#     tbaseline_info_ica['ifg_dates'] = daisy_chain_from_acquisitions(
+#         tbaseline_info_ica['acq_dates']
+#     )
+        
+
+#     return displacement_r2_ica, tbaseline_info_ica
+    
+
+# ##############################################################################
+
+    
+
+
+# def automatic_pixel_epoch_selection(
+#         displacement_r3, 
+#         tbaseline_info,
+#         volcano_dir,
+#         figures,
+#         interactive=False
+#         ):
+#     """
+#     Given a time series with a time varying mask (i.e. pixels come 
+#     in and out of coherene), build a time series with a consistent mask
+#     that uses only some of these acquisitions to build a compromise 
+#     between temporal resolution and number of pixels
+    
+    
+#     Inputs
+    
+#     spatial_ICASAR_data = {'ifgs_dc'       : displacement_r2['mixtures_mc'][:(baseline_end.acq_n+1),],                             
+#                            'mask'          : displacement_r2['mask'],
+#                            'lons'          : displacement_r2['lons'],
+#                            'lats'          : displacement_r2['lats'],
+                           
+                           
+#    'ifg_dates_dc'  : tbaseline_info['ifg_dates'][:(baseline_end.acq_n+1)]}                             
+    
+#     volcano_dir | Path | outdir for figures.  
+    
+#     """
+    
+#     import numpy as np
+#     import numpy.ma as ma
+    
+#     from licsalert.pixel_selection import calculate_valid_pixels
+#     from licsalert.pixel_selection import calculate_optimal_n_epochs
+#     from licsalert.pixel_selection import consistent_pixels_plot
+#     from licsalert.pixel_selection import intersect_valid_pixels
+#     from licsalert.aux import r3_to_r2
+
+
+#     # crop the input data in time
+#     cum_ma_baseline = displacement_r3['cum_ma'].original
+#     acq_dates_baseline = tbaseline_info['acq_dates']
+    
+#     # determine the number of pixels for each epoch
+#     n_pixels, n_pixels_idx, total_pix = calculate_valid_pixels(
+#         cum_ma_baseline
+#         )
+    
+#     # and how those change as we add epochs
+#     n_pix_epoch = intersect_valid_pixels(
+#         cum_ma_baseline,
+#         acq_dates_baseline,
+#         verbose = False
+#         )
+    
+#     # calculate optimal number of epochs
+#     epoch_values, optimal_epoch_n = calculate_optimal_n_epochs(
+#         n_pix_epoch,
+#         volcano_dir,
+#         figures,
+#         )
+#     # tidy as not needed.  
+#     del epoch_values
+    
+    
+#     # Figure, which can be set to interactive for debugging.  
+#     consistent_pixels_plot(
+#         cum_ma_baseline,
+#         acq_dates_baseline,
+#         volcano_dir,
+#         figures,
+#         optimal_epoch_n,
+#         interactive,
+#         )
+        
+    
+#     # build the time series that uses this number of epochs
+#     selected_epochs = sorted(list(n_pixels_idx[:optimal_epoch_n]))    
+#     cum_ma_ica = cum_ma_baseline[selected_epochs, ]
+#     acq_dates_ica = [acq_dates_baseline[i] for i in selected_epochs]
+    
+#     # convert to ICA data form
+#     # debug            
+#     # import matplotlib.pyplot as plt
+#     # for im in cum_ma_ica:
+#     #     f, ax = plt.subplots(1)
+#     #     ax.matshow(im)
+    
+#     mask_bool = ma.getmaskarray(cum_ma_ica)   # nomask → array(False)
+#     # 2. Logical OR along the time axis:  True if masked at least once
+#     mask_2d = np.any(mask_bool, axis=0)
+    
+#     # f, ax = plt.subplots()
+#     # ax.matshow(mask_2d)
+    
+#     # make the mask that's consistent in time.  
+#     mask_3d = np.repeat(
+#         mask_2d[np.newaxis,],
+#         cum_ma_ica.shape[0],
+#         axis = 0
+#         )
+    
+#     # and apply to the data.  
+#     cum_ma_ica_consistent = cum_ma_ica.copy()
+#     cum_ma_ica_consistent.mask = mask_3d
+    
+#     # debug plot
+#     # for im in cum_ma_ica_consistent:
+#     #     f, ax = plt.subplots()
+#     #     ax.matshow(im)
+#     #     plt.pause(0.5)
+        
+#     # flatten to ICA standard (image is a row vector)            
+#     displacement_r2_ica = r3_to_r2(cum_ma_ica_consistent)
+
+#     tbaseline_info_ica = {
+#         'acq_dates' : acq_dates_ica
+#         }
+
+#     return displacement_r2_ica, tbaseline_info_ica

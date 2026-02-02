@@ -6,6 +6,7 @@ Created on Sat Jan 24 21:09:49 2026
 @author: matthew
 """
 
+import pdb
 
 def import_insar_data(
         volcano, volcano_dir, region, 
@@ -95,6 +96,8 @@ def import_insar_data(
              ],
             'icasar_settings'
             )
+        
+
 
         # 3.2: As a LiCSBAS direcotry
         if licsbas_dir is not None:

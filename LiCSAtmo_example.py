@@ -32,13 +32,15 @@ import licsalert
 
 #%% Things to set
 
+np.random.seed(42)
 
 
 #%% Begin
 
 
 def LiCSAtmo_correction(
-        outdir, location,                                              
+        outdir, location,  
+        automatic_selection = True,                                            
         licsbas_dir = None,
         licsbas_jasmin_dir = None,
         data_as_arg = None,
@@ -121,13 +123,16 @@ def LiCSAtmo_correction(
     from licsalert.data_exporting import save_licsalert_aux_data
     from licsalert.licsalert import load_or_create_ICASAR_results
     from licsalert.licsalert import licsalert_date_obj
-    from licsalert.licsalert import construct_baseline_ts
+    
     from licsalert.temporal import calculate_all_temporal_info
     from licsalert.aux import Tee# , col_to_ma    
     from licsalert.plotting import LiCSAlert_aux_figures
     from licsalert.licsalert import bss_components_inversion_per_epoch
     
     
+    
+    #from licsatmo.licsatmo import construct_baseline_ts
+    from licsalert.licsalert import construct_baseline_ts
 
     
     
@@ -154,7 +159,9 @@ def LiCSAtmo_correction(
         (licsalert_settings, icasar_settings, licsbas_settings) = outputs
         del outputs
 
-    # 2: Open the data
+    # 2: Open the data.  Note that displacement_r3['cum_ma'] has the time-varying
+    # nan mask applied, but whatever mask is selected (in licsbas_settings)
+    # is only stored as displacement_r3['mask'], and not applied.  
     displacement_r3, tbaseline_info = import_insar_data(
         location, 
         location_dir,
@@ -167,13 +174,23 @@ def LiCSAtmo_correction(
         alignsar_dc,
         data_as_arg,
         )
+
+    print("Applying the mask that is consistent through all times to the"
+          "time series.  ")
+    
+    displacement_r3['cum_ma'].mask = np.repeat(
+        displacement_r3['mask'][np.newaxis,],
+        repeats = displacement_r3['cum_ma'].shape[0],
+        axis = 0
+        )
     
     
     # debug
     # from licsalert.debugging import interactive_ts_viewer
     # interactive_ts_viewer(displacement_r3['cum_ma'])
+
     
-    # 3: Possibly draw a mask manually (and apply it to displacement_r2)
+    # 3: Possibly draw a mask manually (and apply it to displacement_r3)
     if 'draw_manual_mask' in licsbas_settings.keys():
         displacement_r3 = manual_mask_wrapper(
             location_dir,
@@ -207,23 +224,50 @@ def LiCSAtmo_correction(
                 )
     
     
-    # determine the time series to be used for ICA.  Note that this is
-    # no longer all epochs, and is instead a subset that compromises
-    # temporal resolution and the number of pixels retained.  
-    # pass full time series and end of baseline info so that function 
-    # can crop to only baseline
-    # mean centereing is redone here.  Not stricly needed in space, 
-    # but needed in time when epochs are dropped
-    displacement_r2_ica, tbaseline_info_ica = construct_baseline_ts(
-         icasar_settings['sica_tica'],
-         displacement_r3,
-         tbaseline_info,
-         baseline_end,
-         location_dir,
-         licsalert_settings['figure_type'],
-         interactive=False,                # useful to set to True to debug
-    )
-     
+    
+    # conver the data to a form that can be used with ICASAR
+    displacement_r2_ica = {
+        'lons_mg' : displacement_r3['lons_mg'] ,
+        'lats_mg' : displacement_r3['lats_mg'] ,
+        'dem' : displacement_r3['dem'] ,
+        #'mask' : displacement_r3['mask'] ,
+        }
+    
+    from licsatmo.aux import r3_to_r2
+    r2_data = r3_to_r2(displacement_r3['cum_ma'].original)
+    ifgs_cum = r2_data['ifgs']
+    mask = r2_data['mask']
+    displacement_r2_ica['mask'] = mask
+    displacement_r2_ica['cumulative'] = ifgs_cum
+    displacement_r2_ica['incremental'] = np.diff(
+        ifgs_cum, 
+        axis=0,
+        )
+    
+    
+    from copy import deepcopy
+    tbaseline_info_ica = deepcopy(tbaseline_info)
+    
+    
+    
+    # # determine the time series to be used for ICA.  Note that this is
+    # # no longer all epochs, and is instead a subset that compromises
+    # # temporal resolution and the number of pixels retained.  
+    # # pass full time series and end of baseline info so that function 
+    # # can crop to only baseline
+    # # mean centereing is redone here.  Not stricly needed in space, 
+    # # but needed in time when epochs are dropped
+    # displacement_r2_ica, tbaseline_info_ica = construct_baseline_ts(
+    #      icasar_settings['sica_tica'],
+    #      displacement_r3,
+    #      tbaseline_info,
+    #      baseline_end,
+    #      location_dir,
+    #      licsalert_settings['figure_type'],
+    #      interactive=False,                # useful to set to True to debug
+    # )
+
+    
     # check for the unusual case that there are fewer pixels than pca_comps 
     # requested
     if icasar_settings['sica_tica'] == 'sica':
@@ -260,6 +304,8 @@ def LiCSAtmo_correction(
     # if icasar_settings['figures'] == 'both':
     #     icasar_settings['figures'] = "png+window"
         
+    
+    # Main ICA algorithm, note that returns incremental time courses
     outputs = load_or_create_ICASAR_results(
         run_ICASAR,
         displacement_r2_ica,
@@ -268,12 +314,43 @@ def LiCSAtmo_correction(
         location_dir / "ICASAR_results", 
         icasar_settings
     )        
-    (icasar_sources, mask_icasar, ics_labels) = outputs; del outputs
+    (icasar_sources, mask_icasar, ics_labels, tcs) = outputs; del outputs
     
-    # get hte topo correlated source_n
-    src_n = int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])
+    
+    # # debug: plot tcs 
+    # for n, tc in enumerate(tcs.T):
+    #     f, axes = plt.subplots(1,2)
+    #     axes[0].plot(tc)
+    #     axes[1].plot(np.cumsum(tc))
+    #     for ax in axes:
+    #         ax.grid(True)
+    
+    # convert from incremental time courses to cumulative ones.  
+    ctcs = np.vstack((
+        np.zeros((1, tcs.shape[1])),
+        np.cumsum(tcs, axis = 0),
+        ))
+    
+    
+    # get hte topo correlated source(s)
+    if automatic_selection:
+        # if automtic, there is only one chose.  
+        src_ns = int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])
+    else:
+        # Ask user for a list of sources to discard
+        user_input = input(
+            "Enter a list of integers (comma or space separated) "
+            "of the source number(s) to discard (the first source is 0):\n"
+            )
+        
+        # Parse into a list of ints
+        src_ns = [int(x) for x in user_input.replace(",", " ").split()]
+        
+    print("Sources seclected to be discarded:", src_ns)
+        
+        
 
-
+            
     # also plot the ICS and the DEM (done once)
     LiCSAlert_aux_figures(
         location_dir,
@@ -305,10 +382,13 @@ def LiCSAtmo_correction(
         
         
         # discard the topo correlated sources in space (S) and time (A)
+        # (we discard from highest to lowest so after array changes in size
+        # indexing doesn't change.  )
         A = tcs_c
         S = icasar_sources
-        A_corrected = np.delete(A, src_n, axis=1)
-        S_corrected = np.delete(S, src_n, axis=0)
+        for src_n in sorted(src_ns)[::-1]:
+            A_corrected = np.delete(A, src_n, axis=1)
+            S_corrected = np.delete(S, src_n, axis=0)
         
         # reconstruct the time series 
         X_r2_corrected = A_corrected @ S_corrected        
@@ -351,7 +431,26 @@ def LiCSAtmo_correction(
     elif icasar_settings['sica_tica'] == 'tica':
         pass
     
-        # inversion with sources to get A
+        from licsalert.licsalert import bss_components_inversion
+        from licsatmo.aux import r3_to_r2
+        
+        # get the r3 data
+        ifgs_for_inv_r3 = displacement_r3['cum_ma'].mean_centered.time
+        
+        # returns a dict with 'ifgs' and 'mask'
+        ifgs_for_inv_r2 = r3_to_r2(ifgs_for_inv_r3)
+        
+        pdb.set_trace()
+        
+        m, d_hat, d_resid = bss_components_inversion(
+                ctcs.T,
+                ifgs_for_inv_r2['ifgs'].T,
+                cumulative=False,
+                mask = None,
+                )
+        
+        
+        # inversion with cumulative time courses (which are S here) to get A (which are images)
         
         # discard
         
@@ -404,6 +503,7 @@ def LiCSAtmo_correction(
 # LiCSAtmo_correction(
 #     outdir = Path("./"), 
 #     location = "campi_flegrei_022D",
+#     automatic_selection = True,                                            
 #     licsbas_dir = Path("./example_data/022D_04826_121209_campi_flegrei"),
 #     licsalert_settings = licsalert_settings, 
 #     icasar_settings = icasar_settings,
@@ -428,7 +528,7 @@ icasar_settings = {"sica_tica"              : 'tica',
                    "bootstrapping_param"    : (200, 0),                              # (number of runs with bootstrapping, number of runs without bootstrapping)                    "hdbscan_param" : (35, 10),                        # (min_cluster_size, min_samples)
                     "tsne_param"             : (30, 12),                                       # (perplexity, early_exaggeration)
                     "ica_param"              : (1e-2, 150),                                     # (tolerance, max iterations)
-                    "hdbscan_param"          : (100,10),                                    # (min_cluster_size, min_samples) Discussed in more detail in Mcinnes et al. (2017). min_cluster_size sets the smallest collection of points that can be considered a cluster. min_samples sets how conservative the clustering is. With larger values, more points will be considered noise. 
+                    "hdbscan_param"          : (32,10),                                    # (min_cluster_size, min_samples) Discussed in more detail in Mcinnes et al. (2017). min_cluster_size sets the smallest collection of points that can be considered a cluster. min_samples sets how conservative the clustering is. With larger values, more points will be considered noise. 
                     "ifgs_format"            : 'cum',                                  # can be 'all', 'inc' (incremental - short temporal baselines), or 'cum' (cumulative - relative to first acquisition)
                     "load_fastICA_results"   : True}
 
@@ -442,6 +542,7 @@ licsbas_settings = {"filtered"               : False,
 LiCSAtmo_correction(
     outdir = Path("./"), 
     location = "vesuvius_022D_tica",
+    automatic_selection = False,
     licsbas_dir = Path("./example_data/022D_04826_121209_vesuvius"),
     licsalert_settings = licsalert_settings, 
     icasar_settings = icasar_settings,
