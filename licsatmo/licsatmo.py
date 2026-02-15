@@ -304,7 +304,8 @@ def LiCSAtmo_correction(
     # get hte topo correlated source(s)
     if automatic_selection:
         # if automtic, there is only one chose.  
-        src_ns = int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])
+        src_ns = [int(np.where(ics_labels['labels'][:, 1] == 1)[0][0])]
+        
     else:
         # Ask user for a list of sources to discard
         user_input = input(
@@ -431,10 +432,11 @@ def LiCSAtmo_correction(
         robust=False,
         robust_pct=(2, 98),
         show_axes=False,
+        outfile = location_dir / "original_reconstruction_residual.png"
         )
     
     # correction for a pixels of interest.     
-    for x, y in xy_list:
+    for plot_n, (x, y) in enumerate(xy_list):
         fig, axes = plot_pixel_history_two_r3(
             displacement_r3["cum_ma"].original,
             X_r3_corrected,
@@ -443,6 +445,7 @@ def LiCSAtmo_correction(
             acq_dates=tbaseline_info["acq_dates"],
             labels=("Observed", "Model"),
             window=11,
+            outfile = location_dir / f"original_reconstructed_ts_{plot_n}.png"
         )
             
 

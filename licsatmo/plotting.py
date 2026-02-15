@@ -23,6 +23,7 @@ def plot_ifgs_corrected_residual(
     robust=False,
     robust_pct=(2, 98),
     show_axes=False,
+    outfile=None,
 ):
     """
     Plot A[plot_n], B[plot_n], and residual A[plot_n] - B[plot_n].
@@ -43,6 +44,8 @@ def plot_ifgs_corrected_residual(
         Percentiles for robust scaling, e.g. (2, 98).
     show_axes : bool
         If False, hide axis ticks/frames for cleaner image panels.
+    outfile | None or Path
+        Filename to save png to.  
 
     Returns
     -------
@@ -106,6 +109,10 @@ def plot_ifgs_corrected_residual(
         aspect=40,
     )
     cbar_r.set_label("Residual ")
+    
+    # if a filename provided, save as that 
+    if outfile is not None:
+        fig.savefig(outfile)
 
     return fig, axes
 
@@ -125,6 +132,7 @@ def plot_pixel_history_two_r3(
     line_kwargs=None,
     date_fmt="%Y-%m-%d",
     rotate_dates=30,
+    outfile=None,
 ):
     """
     Plot the time history at one pixel ([:, y, x]) for two 3D arrays.
@@ -240,4 +248,9 @@ def plot_pixel_history_two_r3(
         #         label.set_ha("right")
 
     axes = {"top_a": ax1, "top_b": ax2, "bottom": ax3}
+    
+    # if a filename provided, save as that 
+    if outfile is not None:
+        fig.savefig(outfile)
+    
     return fig, axes

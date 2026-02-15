@@ -3,7 +3,7 @@
 
 
 
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:26:13
+LiCSAtmo is being run for vesuvius_022D_tica at 15/02/2026 14:59:43
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
@@ -29,12 +29,638 @@ Updating the masks for the two sources.  Of the 2120 in data1 and 2522 in data2,
 
     Starting to calculate the 2D kernel density estimates for the signals.  Completed 0 1 2 3 4 5 6 
 
+Done.  
+Loading the results of multiple FastICA runs.  
+Failed to open the results from the previous runs of FastICA. Switching 'load_fastICA_results' to False and trying to continue anyway.  
+No results were found for the multiple ICA runs, so these will now be performed.  
+
+
+Starting the multiple ICA runs with 6 principal components
+FastICA progress with bootstrapping: There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+0% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+1% FastICA algorithm converged in 3 iterations.  
+1% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+2% FastICA algorithm converged in 3 iterations.  
+2% FastICA algorithm converged in 6 iterations.  
+3% FastICA algorithm converged in 4 iterations.  
+3% FastICA algorithm converged in 7 iterations.  
+4% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+4% FastICA algorithm converged in 3 iterations.  
+5% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+5% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+6% FastICA algorithm converged in 7 iterations.  
+6% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+8% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+8% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+9% FastICA algorithm converged in 6 iterations.  
+9% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+10% FastICA algorithm converged in 3 iterations.  
+10% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+11% FastICA algorithm converged in 5 iterations.  
+11% FastICA algorithm converged in 3 iterations.  
+12% FastICA algorithm converged in 5 iterations.  
+12% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+13% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 10 iterations.  
+13% FastICA algorithm converged in 5 iterations.  
+14% FastICA algorithm converged in 4 iterations.  
+14% FastICA algorithm converged in 3 iterations.  
+15% FastICA algorithm converged in 6 iterations.  
+15% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+16% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+16% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+17% FastICA algorithm converged in 4 iterations.  
+17% FastICA algorithm converged in 5 iterations.  
+18% FastICA algorithm converged in 7 iterations.  
+18% FastICA algorithm converged in 6 iterations.  
+19% FastICA algorithm converged in 8 iterations.  
+19% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+20% FastICA algorithm converged in 3 iterations.  
+20% FastICA algorithm converged in 5 iterations.  
+21% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+21% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 9 iterations.  
+22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+22% FastICA algorithm converged in 8 iterations.  
+23% FastICA algorithm converged in 5 iterations.  
+23% FastICA algorithm converged in 6 iterations.  
+24% FastICA algorithm converged in 4 iterations.  
+24% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+25% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+25% FastICA algorithm converged in 4 iterations.  
+26% FastICA algorithm converged in 3 iterations.  
+26% FastICA algorithm converged in 5 iterations.  
+27% FastICA algorithm converged in 4 iterations.  
+27% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+28% FastICA algorithm converged in 5 iterations.  
+29% FastICA algorithm converged in 5 iterations.  
+30% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+30% FastICA algorithm converged in 5 iterations.  
+31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+32% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+32% FastICA algorithm converged in 7 iterations.  
+33% FastICA algorithm converged in 4 iterations.  
+33% FastICA algorithm converged in 8 iterations.  
+34% FastICA algorithm converged in 5 iterations.  
+34% FastICA algorithm converged in 3 iterations.  
+35% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+35% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+36% FastICA algorithm converged in 5 iterations.  
+36% FastICA algorithm converged in 6 iterations.  
+37% FastICA algorithm converged in 6 iterations.  
+37% FastICA algorithm converged in 6 iterations.  
+38% FastICA algorithm converged in 3 iterations.  
+38% FastICA algorithm converged in 4 iterations.  
+39% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+39% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+40% FastICA algorithm converged in 5 iterations.  
+41% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+41% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+42% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+42% FastICA algorithm converged in 4 iterations.  
+43% FastICA algorithm converged in 5 iterations.  
+43% FastICA algorithm converged in 6 iterations.  
+44% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+44% FastICA algorithm converged in 4 iterations.  
+45% FastICA algorithm converged in 4 iterations.  
+45% FastICA algorithm converged in 6 iterations.  
+46% FastICA algorithm converged in 4 iterations.  
+46% FastICA algorithm converged in 3 iterations.  
+47% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+47% FastICA algorithm converged in 4 iterations.  
+48% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+48% FastICA algorithm converged in 4 iterations.  
+49% FastICA algorithm converged in 3 iterations.  
+49% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+50% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+50% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+51% FastICA algorithm converged in 10 iterations.  
+51% FastICA algorithm converged in 3 iterations.  
+52% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+52% FastICA algorithm converged in 5 iterations.  
+53% FastICA algorithm converged in 7 iterations.  
+53% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+54% FastICA algorithm converged in 8 iterations.  
+54% FastICA algorithm converged in 4 iterations.  
+55% FastICA algorithm converged in 3 iterations.  
+55% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+56% FastICA algorithm converged in 5 iterations.  
+56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+56% FastICA algorithm converged in 6 iterations.  
+57% FastICA algorithm converged in 5 iterations.  
+57% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+58% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+59% FastICA algorithm converged in 4 iterations.  
+59% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+60% FastICA algorithm converged in 4 iterations.  
+60% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+61% FastICA algorithm converged in 4 iterations.  
+61% FastICA algorithm converged in 5 iterations.  
+62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+63% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+63% FastICA algorithm converged in 3 iterations.  
+64% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+64% FastICA algorithm converged in 6 iterations.  
+65% FastICA algorithm converged in 7 iterations.  
+65% FastICA algorithm converged in 6 iterations.  
+66% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+66% FastICA algorithm converged in 4 iterations.  
+67% FastICA algorithm converged in 8 iterations.  
+67% FastICA algorithm converged in 7 iterations.  
+68% FastICA algorithm converged in 6 iterations.  
+68% FastICA algorithm converged in 5 iterations.  
+69% FastICA algorithm converged in 4 iterations.  
+69% FastICA algorithm converged in 6 iterations.  
+70% FastICA algorithm converged in 5 iterations.  
+70% FastICA algorithm converged in 5 iterations.  
+71% FastICA algorithm converged in 5 iterations.  
+71% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+72% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+72% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+73% FastICA algorithm converged in 4 iterations.  
+73% FastICA algorithm converged in 4 iterations.  
+74% FastICA algorithm converged in 7 iterations.  
+74% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+75% FastICA algorithm converged in 5 iterations.  
+75% FastICA algorithm converged in 5 iterations.  
+76% FastICA algorithm converged in 7 iterations.  
+76% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+77% FastICA algorithm converged in 7 iterations.  
+77% FastICA algorithm converged in 5 iterations.  
+78% FastICA algorithm converged in 6 iterations.  
+78% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+79% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+79% FastICA algorithm converged in 5 iterations.  
+80% FastICA algorithm converged in 4 iterations.  
+80% FastICA algorithm converged in 4 iterations.  
+81% FastICA algorithm converged in 4 iterations.  
+81% FastICA algorithm converged in 4 iterations.  
+82% FastICA algorithm converged in 8 iterations.  
+82% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+83% FastICA algorithm converged in 3 iterations.  
+83% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+84% FastICA algorithm converged in 3 iterations.  
+84% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+85% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+85% FastICA algorithm converged in 5 iterations.  
+86% FastICA algorithm converged in 6 iterations.  
+86% FastICA algorithm converged in 3 iterations.  
+87% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+87% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+89% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+89% FastICA algorithm converged in 4 iterations.  
+90% FastICA algorithm converged in 5 iterations.  
+90% FastICA algorithm converged in 3 iterations.  
+91% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+91% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+92% FastICA algorithm converged in 6 iterations.  
+92% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+93% FastICA algorithm converged in 12 iterations.  
+93% FastICA algorithm converged in 5 iterations.  
+94% FastICA algorithm converged in 4 iterations.  
+94% FastICA algorithm converged in 3 iterations.  
+95% FastICA algorithm converged in 5 iterations.  
+95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+96% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+96% FastICA algorithm converged in 4 iterations.  
+97% FastICA algorithm converged in 4 iterations.  
+97% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+98% FastICA algorithm converged in 4 iterations.  
+98% FastICA algorithm converged in 5 iterations.  
+99% FastICA algorithm converged in 8 iterations.  
+99% FastICA algorithm converged in 4 iterations.  
+100% 
+
+Starting the multiple ICA runs with 7 principal components
+FastICA progress with bootstrapping: There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+0% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 12 iterations.  
+1% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+1% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+2% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+2% FastICA algorithm converged in 5 iterations.  
+3% FastICA algorithm converged in 5 iterations.  
+3% FastICA algorithm converged in 4 iterations.  
+4% FastICA algorithm converged in 6 iterations.  
+4% FastICA algorithm converged in 5 iterations.  
+5% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+5% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 9 iterations.  
+6% FastICA algorithm converged in 6 iterations.  
+6% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 9 iterations.  
+7% FastICA algorithm converged in 8 iterations.  
+7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+8% FastICA algorithm converged in 3 iterations.  
+8% FastICA algorithm converged in 4 iterations.  
+9% FastICA algorithm converged in 5 iterations.  
+9% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+10% FastICA algorithm converged in 7 iterations.  
+10% FastICA algorithm converged in 3 iterations.  
+11% FastICA algorithm converged in 3 iterations.  
+11% FastICA algorithm converged in 7 iterations.  
+12% FastICA algorithm converged in 5 iterations.  
+12% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+13% FastICA algorithm converged in 4 iterations.  
+13% FastICA algorithm converged in 7 iterations.  
+14% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+14% FastICA algorithm converged in 7 iterations.  
+15% FastICA algorithm converged in 8 iterations.  
+15% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+16% FastICA algorithm converged in 5 iterations.  
+16% FastICA algorithm converged in 5 iterations.  
+17% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+17% FastICA algorithm converged in 5 iterations.  
+18% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+18% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+19% FastICA algorithm converged in 6 iterations.  
+19% FastICA algorithm converged in 5 iterations.  
+20% FastICA algorithm converged in 7 iterations.  
+20% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+21% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+21% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+22% FastICA algorithm converged in 5 iterations.  
+23% FastICA algorithm converged in 7 iterations.  
+23% FastICA algorithm converged in 6 iterations.  
+24% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 9 iterations.  
+24% FastICA algorithm converged in 5 iterations.  
+25% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 8 iterations.  
+25% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+26% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+26% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+27% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+27% FastICA algorithm converged in 5 iterations.  
+28% FastICA algorithm converged in 5 iterations.  
+28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+29% FastICA algorithm converged in 8 iterations.  
+30% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+30% FastICA algorithm converged in 7 iterations.  
+31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+32% FastICA algorithm converged in 5 iterations.  
+32% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+33% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+33% FastICA algorithm converged in 5 iterations.  
+34% FastICA algorithm converged in 3 iterations.  
+34% FastICA algorithm converged in 6 iterations.  
+35% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 8 iterations.  
+35% FastICA algorithm converged in 7 iterations.  
+36% FastICA algorithm converged in 7 iterations.  
+36% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+37% FastICA algorithm converged in 5 iterations.  
+37% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+38% FastICA algorithm converged in 7 iterations.  
+38% FastICA algorithm converged in 4 iterations.  
+39% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+39% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 8 iterations.  
+41% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+41% FastICA algorithm converged in 4 iterations.  
+42% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+42% FastICA algorithm converged in 5 iterations.  
+43% FastICA algorithm converged in 10 iterations.  
+43% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+44% FastICA algorithm converged in 6 iterations.  
+44% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+45% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 11 iterations.  
+45% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+46% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 9 iterations.  
+46% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+47% FastICA algorithm converged in 7 iterations.  
+47% FastICA algorithm converged in 9 iterations.  
+48% FastICA algorithm converged in 4 iterations.  
+48% FastICA algorithm converged in 3 iterations.  
+49% FastICA algorithm converged in 6 iterations.  
+49% FastICA algorithm converged in 12 iterations.  
+50% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+50% FastICA algorithm converged in 4 iterations.  
+51% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+51% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+52% FastICA algorithm converged in 4 iterations.  
+52% FastICA algorithm converged in 6 iterations.  
+53% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+53% FastICA algorithm converged in 4 iterations.  
+54% FastICA algorithm converged in 6 iterations.  
+54% FastICA algorithm converged in 6 iterations.  
+55% FastICA algorithm converged in 5 iterations.  
+55% FastICA algorithm converged in 4 iterations.  
+56% FastICA algorithm converged in 9 iterations.  
+56% FastICA algorithm converged in 7 iterations.  
+56% FastICA algorithm converged in 6 iterations.  
+57% FastICA algorithm converged in 4 iterations.  
+57% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+58% FastICA algorithm converged in 8 iterations.  
+59% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+59% FastICA algorithm converged in 4 iterations.  
+60% FastICA algorithm converged in 4 iterations.  
+60% FastICA algorithm converged in 7 iterations.  
+61% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+61% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 8 iterations.  
+62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 3 iterations.  
+63% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+63% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+64% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+64% FastICA algorithm converged in 4 iterations.  
+65% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+65% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+66% FastICA algorithm converged in 4 iterations.  
+66% FastICA algorithm converged in 6 iterations.  
+67% FastICA algorithm converged in 7 iterations.  
+67% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+68% FastICA algorithm converged in 4 iterations.  
+68% FastICA algorithm converged in 6 iterations.  
+69% FastICA algorithm converged in 4 iterations.  
+69% FastICA algorithm converged in 5 iterations.  
+70% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+70% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+71% FastICA algorithm converged in 5 iterations.  
+71% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+72% FastICA algorithm converged in 8 iterations.  
+72% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+73% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+73% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+74% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+74% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 7 iterations.  
+75% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+75% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+76% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+76% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+77% FastICA algorithm converged in 4 iterations.  
+77% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+78% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+78% FastICA algorithm converged in 5 iterations.  
+79% FastICA algorithm converged in 4 iterations.  
+79% FastICA algorithm converged in 5 iterations.  
+80% FastICA algorithm converged in 6 iterations.  
+80% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+81% FastICA algorithm converged in 5 iterations.  
+81% FastICA algorithm converged in 6 iterations.  
+82% FastICA algorithm converged in 5 iterations.  
+82% FastICA algorithm converged in 4 iterations.  
+83% FastICA algorithm converged in 7 iterations.  
+83% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+84% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 8 iterations.  
+84% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+85% FastICA algorithm converged in 3 iterations.  
+85% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+86% FastICA algorithm converged in 4 iterations.  
+86% FastICA algorithm converged in 8 iterations.  
+87% FastICA algorithm converged in 6 iterations.  
+87% FastICA algorithm converged in 6 iterations.  
+88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+89% FastICA algorithm converged in 4 iterations.  
+89% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+90% FastICA algorithm converged in 4 iterations.  
+90% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+91% FastICA algorithm converged in 5 iterations.  
+91% FastICA algorithm converged in 6 iterations.  
+92% FastICA algorithm converged in 7 iterations.  
+92% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+93% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+93% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 4 iterations.  
+94% FastICA algorithm converged in 8 iterations.  
+94% FastICA algorithm converged in 8 iterations.  
+95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 6 iterations.  
+95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
+FastICA algorithm converged in 5 iterations.  
+96% FastICA algorithm converged in 8 iterations.  
+96% FastICA algorithm converged in 9 iterations.  
+97% FastICA algorithm converged in 5 iterations.  
+97% FastICA algorithm converged in 5 iterations.  
+98% FastICA algorithm converged in 6 iterations.  
+98% FastICA algorithm converged in 6 iterations.  
+99% FastICA algorithm converged in 6 iterations.  
+99% FastICA algorithm converged in 6 iterations.  
+100% 
+Starting to compute the pairwise distance matrices....Done!
+Starting to cluster the sources using HDBSCAN....Done!
+Starting to calculate the 2D manifold representation....Done!
+Calculating the centrotypes and associated time courses...Done!
+Need to plot PC and IS spaially.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
+6 ICA sources have been chosen by the user. Continuing
+Starting to create the 03_ICA_sources_correlations figure:
+Updating the masks for the two sources.  Of the 2120 in data1 and 2522 in data2, 2120 are in both and can be used.  
+    Starting to calculate the 2D kernel density estimates for the signals.  Completed 0 1 2 3 4 5 
+
+    Starting to calculate the 2D kernel density estimates for the signals.  Completed 0 1 2 3 4 5 
+
+Done.  
+Creating a Google Earth .kmz of the geocoded independent components... Done!
+
+
+Source 0: deformation
+Source 1: topo_cor_APS
+Source 2: turbulent_APS
+Source 3: turbulent_APS
+Source 4: turbulent_APS
+Source 5: turbulent_APS
+
+
+Saving the key results as a .pkl file... Done!
+Means for each row of sources (these should be images): [0.00000000e+00 4.18952085e-19 8.37904170e-19 8.37904170e-19
+ 7.33166148e-19 1.67580834e-18]
+Means for each column of the tcs (these should be time courses): [ 7.28280410e-19  2.10392118e-18 -4.16738234e-18  6.47360364e-19
+  3.23680182e-18  6.63544373e-18]
+Sources seclected to be discarded: [1]
 
 
 
 
 
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:26:23
+LiCSAtmo is being run for vesuvius_022D_tica at 15/02/2026 15:05:00
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
@@ -63,587 +689,14 @@ Updating the masks for the two sources.  Of the 2120 in data1 and 2522 in data2,
 
 Done.  
 Loading the results of multiple FastICA runs.  
-Failed to open the results from the previous runs of FastICA. Switching 'load_fastICA_results' to False and trying to continue anyway.  
-No results were found for the multiple ICA runs, so these will now be performed.  
 
-
-Starting the multiple ICA runs with 6 principal components
-FastICA progress with bootstrapping: There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-0% FastICA algorithm converged in 6 iterations.  
-1% FastICA algorithm converged in 3 iterations.  
-1% FastICA algorithm converged in 3 iterations.  
-2% FastICA algorithm converged in 5 iterations.  
-2% FastICA algorithm converged in 6 iterations.  
-3% FastICA algorithm converged in 3 iterations.  
-3% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-4% FastICA algorithm converged in 4 iterations.  
-4% FastICA algorithm converged in 5 iterations.  
-5% FastICA algorithm converged in 6 iterations.  
-5% FastICA algorithm converged in 5 iterations.  
-6% FastICA algorithm converged in 6 iterations.  
-6% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-7% FastICA algorithm converged in 3 iterations.  
-8% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-8% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-9% FastICA algorithm converged in 8 iterations.  
-9% FastICA algorithm converged in 7 iterations.  
-10% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-10% FastICA algorithm converged in 5 iterations.  
-11% FastICA algorithm converged in 6 iterations.  
-11% FastICA algorithm converged in 5 iterations.  
-12% FastICA algorithm converged in 4 iterations.  
-12% FastICA algorithm converged in 5 iterations.  
-13% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 2 iterations.  
-13% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-14% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-14% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-15% FastICA algorithm converged in 7 iterations.  
-15% FastICA algorithm converged in 5 iterations.  
-16% FastICA algorithm converged in 4 iterations.  
-16% FastICA algorithm converged in 6 iterations.  
-17% FastICA algorithm converged in 4 iterations.  
-17% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-18% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-18% FastICA algorithm converged in 6 iterations.  
-19% FastICA algorithm converged in 4 iterations.  
-19% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-20% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-20% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-21% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-21% FastICA algorithm converged in 4 iterations.  
-22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-23% FastICA algorithm converged in 6 iterations.  
-23% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-24% FastICA algorithm converged in 3 iterations.  
-24% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-25% FastICA algorithm converged in 3 iterations.  
-25% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-26% FastICA algorithm converged in 7 iterations.  
-26% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-27% FastICA algorithm converged in 7 iterations.  
-27% FastICA algorithm converged in 4 iterations.  
-28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-28% FastICA algorithm converged in 6 iterations.  
-28% FastICA algorithm converged in 6 iterations.  
-29% FastICA algorithm converged in 7 iterations.  
-30% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-30% FastICA algorithm converged in 4 iterations.  
-31% FastICA algorithm converged in 4 iterations.  
-31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-32% FastICA algorithm converged in 5 iterations.  
-32% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-33% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-33% FastICA algorithm converged in 4 iterations.  
-34% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-34% FastICA algorithm converged in 4 iterations.  
-35% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-35% FastICA algorithm converged in 5 iterations.  
-36% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-36% FastICA algorithm converged in 5 iterations.  
-37% FastICA algorithm converged in 4 iterations.  
-37% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-38% FastICA algorithm converged in 10 iterations.  
-38% FastICA algorithm converged in 6 iterations.  
-39% FastICA algorithm converged in 5 iterations.  
-39% FastICA algorithm converged in 5 iterations.  
-40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-41% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-41% FastICA algorithm converged in 3 iterations.  
-42% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-42% FastICA algorithm converged in 4 iterations.  
-43% FastICA algorithm converged in 3 iterations.  
-43% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-44% FastICA algorithm converged in 5 iterations.  
-44% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-45% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-45% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-46% FastICA algorithm converged in 6 iterations.  
-46% FastICA algorithm converged in 5 iterations.  
-47% FastICA algorithm converged in 9 iterations.  
-47% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-48% FastICA algorithm converged in 4 iterations.  
-48% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-49% FastICA algorithm converged in 3 iterations.  
-49% FastICA algorithm converged in 5 iterations.  
-50% FastICA algorithm converged in 5 iterations.  
-50% FastICA algorithm converged in 6 iterations.  
-51% FastICA algorithm converged in 4 iterations.  
-51% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-52% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-52% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-53% FastICA algorithm converged in 4 iterations.  
-53% FastICA algorithm converged in 5 iterations.  
-54% FastICA algorithm converged in 5 iterations.  
-54% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-55% FastICA algorithm converged in 5 iterations.  
-55% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-57% FastICA algorithm converged in 3 iterations.  
-57% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-58% FastICA algorithm converged in 5 iterations.  
-59% FastICA algorithm converged in 5 iterations.  
-59% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-60% FastICA algorithm converged in 6 iterations.  
-60% FastICA algorithm converged in 4 iterations.  
-61% FastICA algorithm converged in 3 iterations.  
-61% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-62% FastICA algorithm converged in 6 iterations.  
-63% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-63% FastICA algorithm converged in 5 iterations.  
-64% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-64% FastICA algorithm converged in 7 iterations.  
-65% FastICA algorithm converged in 5 iterations.  
-65% FastICA algorithm converged in 7 iterations.  
-66% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-66% FastICA algorithm converged in 3 iterations.  
-67% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-67% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-68% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-68% FastICA algorithm converged in 4 iterations.  
-69% FastICA algorithm converged in 5 iterations.  
-69% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-70% FastICA algorithm converged in 5 iterations.  
-70% FastICA algorithm converged in 6 iterations.  
-71% FastICA algorithm converged in 5 iterations.  
-71% FastICA algorithm converged in 3 iterations.  
-72% FastICA algorithm converged in 5 iterations.  
-72% FastICA algorithm converged in 6 iterations.  
-73% FastICA algorithm converged in 2 iterations.  
-73% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-74% FastICA algorithm converged in 7 iterations.  
-74% FastICA algorithm converged in 4 iterations.  
-75% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-75% FastICA algorithm converged in 5 iterations.  
-76% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-76% FastICA algorithm converged in 4 iterations.  
-77% FastICA algorithm converged in 5 iterations.  
-77% FastICA algorithm converged in 3 iterations.  
-78% FastICA algorithm converged in 4 iterations.  
-78% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 12 iterations.  
-79% FastICA algorithm converged in 7 iterations.  
-79% FastICA algorithm converged in 4 iterations.  
-80% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-80% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-81% FastICA algorithm converged in 3 iterations.  
-81% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-82% FastICA algorithm converged in 5 iterations.  
-82% FastICA algorithm converged in 6 iterations.  
-83% FastICA algorithm converged in 5 iterations.  
-83% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-84% FastICA algorithm converged in 5 iterations.  
-84% FastICA algorithm converged in 6 iterations.  
-85% FastICA algorithm converged in 4 iterations.  
-85% FastICA algorithm converged in 4 iterations.  
-86% FastICA algorithm converged in 5 iterations.  
-86% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-87% FastICA algorithm converged in 5 iterations.  
-87% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-89% FastICA algorithm converged in 5 iterations.  
-89% FastICA algorithm converged in 3 iterations.  
-90% FastICA algorithm converged in 4 iterations.  
-90% FastICA algorithm converged in 3 iterations.  
-91% FastICA algorithm converged in 7 iterations.  
-91% FastICA algorithm converged in 4 iterations.  
-92% FastICA algorithm converged in 5 iterations.  
-92% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-93% FastICA algorithm converged in 11 iterations.  
-93% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-94% FastICA algorithm converged in 8 iterations.  
-94% FastICA algorithm converged in 5 iterations.  
-95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-95% FastICA algorithm converged in 7 iterations.  
-96% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-96% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-97% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-97% FastICA algorithm converged in 4 iterations.  
-98% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-98% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-99% FastICA algorithm converged in 5 iterations.  
-99% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-100% 
-
-Starting the multiple ICA runs with 7 principal components
-FastICA progress with bootstrapping: There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-0% FastICA algorithm converged in 9 iterations.  
-1% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-1% FastICA algorithm converged in 3 iterations.  
-2% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-2% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-3% FastICA algorithm converged in 8 iterations.  
-3% FastICA algorithm converged in 4 iterations.  
-4% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-4% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-5% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-5% FastICA algorithm converged in 9 iterations.  
-6% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-6% FastICA algorithm converged in 5 iterations.  
-7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-7% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-8% FastICA algorithm converged in 6 iterations.  
-8% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 11 iterations.  
-9% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-9% FastICA algorithm converged in 10 iterations.  
-10% FastICA algorithm converged in 8 iterations.  
-10% FastICA algorithm converged in 5 iterations.  
-11% FastICA algorithm converged in 4 iterations.  
-11% FastICA algorithm converged in 6 iterations.  
-12% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-12% FastICA algorithm converged in 7 iterations.  
-13% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-13% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-14% FastICA algorithm converged in 6 iterations.  
-14% FastICA algorithm converged in 6 iterations.  
-15% FastICA algorithm converged in 5 iterations.  
-15% FastICA algorithm converged in 4 iterations.  
-16% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-16% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-17% FastICA algorithm converged in 4 iterations.  
-17% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-18% FastICA algorithm converged in 6 iterations.  
-18% FastICA algorithm converged in 5 iterations.  
-19% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 9 iterations.  
-19% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-20% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-20% FastICA algorithm converged in 8 iterations.  
-21% FastICA algorithm converged in 5 iterations.  
-21% FastICA algorithm converged in 5 iterations.  
-22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-22% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-23% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-23% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-24% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-24% FastICA algorithm converged in 6 iterations.  
-25% FastICA algorithm converged in 5 iterations.  
-25% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-26% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-26% FastICA algorithm converged in 6 iterations.  
-27% FastICA algorithm converged in 5 iterations.  
-27% FastICA algorithm converged in 6 iterations.  
-28% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-28% FastICA algorithm converged in 6 iterations.  
-28% FastICA algorithm converged in 5 iterations.  
-29% FastICA algorithm converged in 4 iterations.  
-30% FastICA algorithm converged in 6 iterations.  
-30% FastICA algorithm converged in 5 iterations.  
-31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-31% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-32% FastICA algorithm converged in 13 iterations.  
-32% FastICA algorithm converged in 6 iterations.  
-33% FastICA algorithm converged in 7 iterations.  
-33% FastICA algorithm converged in 4 iterations.  
-34% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-34% FastICA algorithm converged in 5 iterations.  
-35% FastICA algorithm converged in 4 iterations.  
-35% FastICA algorithm converged in 7 iterations.  
-36% FastICA algorithm converged in 5 iterations.  
-36% FastICA algorithm converged in 5 iterations.  
-37% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-37% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-38% FastICA algorithm converged in 4 iterations.  
-38% FastICA algorithm converged in 5 iterations.  
-39% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-39% FastICA algorithm converged in 4 iterations.  
-40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-40% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-41% FastICA algorithm converged in 5 iterations.  
-41% FastICA algorithm converged in 5 iterations.  
-42% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-42% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-43% FastICA algorithm converged in 7 iterations.  
-43% FastICA algorithm converged in 4 iterations.  
-44% FastICA algorithm converged in 8 iterations.  
-44% FastICA algorithm converged in 5 iterations.  
-45% FastICA algorithm converged in 8 iterations.  
-45% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-46% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-46% FastICA algorithm converged in 5 iterations.  
-47% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-47% FastICA algorithm converged in 9 iterations.  
-48% FastICA algorithm converged in 5 iterations.  
-48% FastICA algorithm converged in 8 iterations.  
-49% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-49% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 9 iterations.  
-50% FastICA algorithm converged in 6 iterations.  
-50% FastICA algorithm converged in 4 iterations.  
-51% FastICA algorithm converged in 6 iterations.  
-51% FastICA algorithm converged in 6 iterations.  
-52% FastICA algorithm converged in 5 iterations.  
-52% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-53% FastICA algorithm converged in 5 iterations.  
-53% FastICA algorithm converged in 7 iterations.  
-54% FastICA algorithm converged in 5 iterations.  
-54% FastICA algorithm converged in 6 iterations.  
-55% FastICA algorithm converged in 5 iterations.  
-55% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-56% FastICA algorithm converged in 5 iterations.  
-56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-56% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-57% FastICA algorithm converged in 5 iterations.  
-57% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-58% FastICA algorithm converged in 5 iterations.  
-59% FastICA algorithm converged in 5 iterations.  
-59% FastICA algorithm converged in 4 iterations.  
-60% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-60% FastICA algorithm converged in 4 iterations.  
-61% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-61% FastICA algorithm converged in 4 iterations.  
-62% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-62% FastICA algorithm converged in 5 iterations.  
-63% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-63% FastICA algorithm converged in 5 iterations.  
-64% FastICA algorithm converged in 6 iterations.  
-64% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-65% FastICA algorithm converged in 8 iterations.  
-65% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 9 iterations.  
-66% FastICA algorithm converged in 5 iterations.  
-66% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-67% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-67% FastICA algorithm converged in 9 iterations.  
-68% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-68% FastICA algorithm converged in 7 iterations.  
-69% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-69% FastICA algorithm converged in 6 iterations.  
-70% FastICA algorithm converged in 5 iterations.  
-70% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-71% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-71% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-72% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-72% FastICA algorithm converged in 5 iterations.  
-73% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-73% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-74% FastICA algorithm converged in 5 iterations.  
-74% FastICA algorithm converged in 6 iterations.  
-75% FastICA algorithm converged in 4 iterations.  
-75% FastICA algorithm converged in 6 iterations.  
-76% FastICA algorithm converged in 5 iterations.  
-76% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-77% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-77% FastICA algorithm converged in 4 iterations.  
-78% FastICA algorithm converged in 5 iterations.  
-78% FastICA algorithm converged in 7 iterations.  
-79% FastICA algorithm converged in 8 iterations.  
-79% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-80% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-80% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-81% FastICA algorithm converged in 5 iterations.  
-81% FastICA algorithm converged in 4 iterations.  
-82% FastICA algorithm converged in 5 iterations.  
-82% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-83% FastICA algorithm converged in 6 iterations.  
-83% FastICA algorithm converged in 5 iterations.  
-84% FastICA algorithm converged in 4 iterations.  
-84% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-85% FastICA algorithm converged in 5 iterations.  
-85% FastICA algorithm converged in 7 iterations.  
-86% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-86% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-87% FastICA algorithm converged in 3 iterations.  
-87% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-88% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 8 iterations.  
-88% FastICA algorithm converged in 3 iterations.  
-89% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-89% FastICA algorithm converged in 6 iterations.  
-90% FastICA algorithm converged in 5 iterations.  
-90% FastICA algorithm converged in 5 iterations.  
-91% FastICA algorithm converged in 7 iterations.  
-91% FastICA algorithm converged in 3 iterations.  
-92% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-92% FastICA algorithm converged in 7 iterations.  
-93% FastICA algorithm converged in 4 iterations.  
-93% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 4 iterations.  
-94% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-94% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 6 iterations.  
-95% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 5 iterations.  
-96% FastICA algorithm converged in 10 iterations.  
-96% FastICA algorithm converged in 4 iterations.  
-97% FastICA algorithm converged in 6 iterations.  
-97% FastICA algorithm converged in 7 iterations.  
-98% FastICA algorithm converged in 6 iterations.  
-98% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 7 iterations.  
-99% There are negative values in the eigenvalues.  This is a tricky problem, but is usually only caused by poor approximations to zero by floating point arithmetic.  Trying to set these to a better approxiation of zero to contiue.  
-FastICA algorithm converged in 3 iterations.  
-99% FastICA algorithm converged in 5 iterations.  
-100% 
 Starting to compute the pairwise distance matrices....Done!
 Starting to cluster the sources using HDBSCAN....Done!
 Starting to calculate the 2D manifold representation....Done!
 Calculating the centrotypes and associated time courses...Done!
 Need to plot PC and IS spaially.  
+Waiting for the user to select the ICA sources using the interactive window.  
+Waiting for the user to select the ICA sources using the interactive window.  
 Waiting for the user to select the ICA sources using the interactive window.  
 Waiting for the user to select the ICA sources using the interactive window.  
 Waiting for the user to select the ICA sources using the interactive window.  
@@ -668,297 +721,17 @@ Source 5: turbulent_APS
 
 
 Saving the key results as a .pkl file... Done!
-Means for each row of sources (these should be images): [-2.09476042e-19  8.37904170e-19  8.37904170e-19  0.00000000e+00
-  4.18952085e-19 -1.25685625e-18]
-Means for each column of the tcs (these should be time courses): [-7.58625427e-19  1.65886093e-18  5.54302312e-18 -1.94208109e-18
-  8.90120501e-19 -2.02300114e-18]
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(328)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    326 [1;33m            [0max[0m[1;33m.[0m[0mgrid[0m[1;33m([0m[1;32mTrue[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    327 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 328 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    329 [1;33m[1;33m[0m[0m
-[0m[1;32m    330 [1;33m    [1;31m# convert from incremental time courses to cumulative ones.[0m[1;33m[0m[1;33m[0m[0m
-[0m
-[1;31m    [... skipping 23 hidden frame(s)][0m
+Means for each row of sources (these should be images): [0.00000000e+00 4.18952085e-19 8.37904170e-19 8.37904170e-19
+ 7.33166148e-19 1.67580834e-18]
+Means for each column of the tcs (these should be time courses): [ 7.28280410e-19  2.10392118e-18 -4.16738234e-18  6.47360364e-19
+  3.23680182e-18  6.63544373e-18]
+Sources seclected to be discarded: [1, 4]
 
-  [1;32m/tmp/ipykernel_15898/2604428984.py[0m(1)[0;36m<module>[1;34m()[0m
-[1;32m----> 1 [1;33m[0mget_ipython[0m[1;33m([0m[1;33m)[0m[1;33m.[0m[0mrun_line_magic[0m[1;33m([0m[1;34m'runfile'[0m[1;33m,[0m [1;34m'/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py --wdir --post-mortem'[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m
-  [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/site-packages/IPython/core/interactiveshell.py[0m(2482)[0;36mrun_line_magic[1;34m()[0m
-[0;32m   2480 [0m                [0mkwargs[0m[1;33m[[0m[1;34m'local_ns'[0m[1;33m][0m [1;33m=[0m [0mself[0m[1;33m.[0m[0mget_local_scope[0m[1;33m([0m[0mstack_depth[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0;32m   2481 [0m            [1;32mwith[0m [0mself[0m[1;33m.[0m[0mbuiltin_trap[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[1;32m-> 2482 [1;33m                [0mresult[0m [1;33m=[0m [0mfn[0m[1;33m([0m[1;33m*[0m[0margs[0m[1;33m,[0m [1;33m**[0m[0mkwargs[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[0;32m   2483 [0m[1;33m[0m[0m
-[0;32m   2484 [0m            [1;31m# The code below prevents the output from being displayed[0m[1;33m[0m[1;33m[0m[0m
 
-  [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/site-packages/spyder_kernels/customize/code_runner.py[0m(165)[0;36mrunfile[1;34m()[0m
-[0;32m    163 [0m            [0mself[0m[1;33m.[0m[0mrunfile[0m[1;33m,[0m [0mline[0m[1;33m,[0m [0mlocal_ns[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    164 [0m[1;33m[0m[0m
-[1;32m--> 165 [1;33m        return self._exec_file(
-[0m[0;32m    166 [0m            [0mfilename[0m[1;33m=[0m[0margs[0m[1;33m.[0m[0mfilename[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    167 [0m            [0mcanonic_filename[0m[1;33m=[0m[0margs[0m[1;33m.[0m[0mcanonic_filename[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
 
-  [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/site-packages/spyder_kernels/customize/code_runner.py[0m(343)[0;36m_exec_file[1;34m()[0m
-[0;32m    341 [0m                        [0mself[0m[1;33m.[0m[0mshell[0m[1;33m.[0m[0mrun_cell_magic[0m[1;33m([0m[1;34m"cython"[0m[1;33m,[0m [1;34m""[0m[1;33m,[0m [0mf[0m[1;33m.[0m[0mread[0m[1;33m([0m[1;33m)[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    342 [0m                [1;32melse[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[1;32m--> 343 [1;33m                    self._exec_code(
-[0m[0;32m    344 [0m                        [0mfile_code[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    345 [0m                        [0mfilename[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
 
-  [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/site-packages/spyder_kernels/customize/code_runner.py[0m(513)[0;36m_exec_code[1;34m()[0m
-[0;32m    511 [0m                [1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    512 [0m[1;33m[0m[0m
-[1;32m--> 513 [1;33m            exec_encapsulate_locals(
-[0m[0;32m    514 [0m                [0mast_code[0m[1;33m,[0m [0mns_globals[0m[1;33m,[0m [0mns_locals[0m[1;33m,[0m [0mexec_fun[0m[1;33m,[0m [0mfilename[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    515 [0m            [1;33m)[0m[1;33m[0m[1;33m[0m[0m
 
-  [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/site-packages/spyder_kernels/customize/utils.py[0m(209)[0;36mexec_encapsulate_locals[1;34m()[0m
-[0;32m    207 [0m        [1;32mif[0m [0mfilename[0m [1;32mis[0m [1;32mNone[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    208 [0m            [0mfilename[0m [1;33m=[0m [1;34m"<stdin>"[0m[1;33m[0m[1;33m[0m[0m
-[1;32m--> 209 [1;33m        [0mexec_fun[0m[1;33m([0m[0mcompile[0m[1;33m([0m[0mcode_ast[0m[1;33m,[0m [0mfilename[0m[1;33m,[0m [1;34m"exec"[0m[1;33m)[0m[1;33m,[0m [0mglobals[0m[1;33m,[0m [1;32mNone[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[0;32m    210 [0m    [1;32mfinally[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    211 [0m        [1;32mif[0m [0muse_locals_hack[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-
-  [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(541)[0;36m<module>[1;34m()[0m
-[0;32m    539 [0m[1;33m[0m[0m
-[0;32m    540 [0m[1;33m[0m[0m
-[1;32m--> 541 [1;33mLiCSAtmo_correction(
-[0m[0;32m    542 [0m    [0moutdir[0m [1;33m=[0m [0mPath[0m[1;33m([0m[1;34m"./"[0m[1;33m)[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
-[0;32m    543 [0m    [0mlocation[0m [1;33m=[0m [1;34m"vesuvius_022D_tica"[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(328)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    326 [1;33m            [0max[0m[1;33m.[0m[0mgrid[0m[1;33m([0m[1;32mTrue[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    327 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 328 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    329 [1;33m[1;33m[0m[0m
-[0m[1;32m    330 [1;33m    [1;31m# convert from incremental time courses to cumulative ones.[0m[1;33m[0m[1;33m[0m[0m
-[0m
-****************************************
-Entering post mortem debugging...
-****************************************
-> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m
-> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(116)[0;36mtrace_dispatch[1;34m()[0m
-[1;32m    114 [1;33m                [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    115 [1;33m            [1;32mif[0m [0mevent[0m [1;33m==[0m [1;34m'opcode'[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 116 [1;33m                [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mdispatch_opcode[0m[1;33m([0m[0mframe[0m[1;33m,[0m [0marg[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    117 [1;33m            [0mprint[0m[1;33m([0m[1;34m'bdb.Bdb.dispatch: unknown debugging event:'[0m[1;33m,[0m [0mrepr[0m[1;33m([0m[0mevent[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    118 [1;33m            [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.blind_signal_separation, licsalert.icasar.plotting, licsalert.icasar.sources_interactive_figure, licsalert.licsalert, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:36:21
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:36:21
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(328)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    326 [1;33m            [0max[0m[1;33m.[0m[0mgrid[0m[1;33m([0m[1;32mTrue[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    327 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 328 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    329 [1;33m[1;33m[0m[0m
-[0m[1;32m    330 [1;33m    [1;31m# convert from incremental time courses to cumulative ones.[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(328)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    326 [1;33m            [0max[0m[1;33m.[0m[0mgrid[0m[1;33m([0m[1;32mTrue[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    327 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 328 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    329 [1;33m[1;33m[0m[0m
-[0m[1;32m    330 [1;33m    [1;31m# convert from incremental time courses to cumulative ones.[0m[1;33m[0m[1;33m[0m[0m
-[0m
-
-******  AttributeError: module 'numpy' has no attribute 'cum'. Did you mean: 'sum'?AttributeError: module 'numpy' has no attribute 'cum'. Did you mean: 'sum'?
-
-******  TypeError: tuple indices must be integers or slices, not tupleTypeError: tuple indices must be integers or slices, not tuple
-
-******  TypeError: tuple indices must be integers or slices, not tupleTypeError: tuple indices must be integers or slices, not tuple
-
-******  ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 1 and the array at index 1 has size 6ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 1 and the array at index 1 has size 6
-
-******  ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 1 and the array at index 1 has size 6ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 1 and the array at index 1 has size 6
-
-********************************************************************************
-
-Entering post mortem debugging...Entering post mortem debugging...
-
-********************************************************************************
-
-> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:43:05
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:43:05
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 02/02/2026 21:43:05
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:   [1][1][1]
-
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(443)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    441 [1;33m        [0mifgs_for_inv_r2[0m [1;33m=[0m [0mr3_to_r2[0m[1;33m([0m[0mifgs_for_inv_r3[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    442 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 443 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    444 [1;33m[1;33m[0m[0m
-[0m[1;32m    445 [1;33m        m, d_hat, d_resid = bss_components_inversion(
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(443)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    441 [1;33m        [0mifgs_for_inv_r2[0m [1;33m=[0m [0mr3_to_r2[0m[1;33m([0m[0mifgs_for_inv_r3[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    442 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 443 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    444 [1;33m[1;33m[0m[0m
-[0m[1;32m    445 [1;33m        m, d_hat, d_resid = bss_components_inversion(
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(443)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    441 [1;33m        [0mifgs_for_inv_r2[0m [1;33m=[0m [0mr3_to_r2[0m[1;33m([0m[0mifgs_for_inv_r3[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    442 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 443 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    444 [1;33m[1;33m[0m[0m
-[0m[1;32m    445 [1;33m        m, d_hat, d_resid = bss_components_inversion(
-[0m
-
-
-*********   TypeError: Invalid shape (344,) for image dataTypeError: Invalid shape (344,) for image dataTypeError: Invalid shape (344,) for image data
-
-
-*********   AttributeError: 'dict' object has no attribute 'shape'AttributeError: 'dict' object has no attribute 'shape'AttributeError: 'dict' object has no attribute 'shape'
-
-
-*********   AttributeError: 'MeanCenteredArray' object has no attribute 'shape'AttributeError: 'MeanCenteredArray' object has no attribute 'shape'AttributeError: 'MeanCenteredArray' object has no attribute 'shape'
-
-
-************************************************************************************************************************
-
-
-Entering post mortem debugging...Entering post mortem debugging...Entering post mortem debugging...
-
-
-************************************************************************************************************************
-
-
-> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/anaconda3/envs/licsalert2/lib/python3.13/bdb.py[0m(216)[0;36mdispatch_opcode[1;34m()[0m
-[1;32m    214 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mstop_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m [1;32mor[0m [0mself[0m[1;33m.[0m[0mbreak_here[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    215 [1;33m            [0mself[0m[1;33m.[0m[0muser_opcode[0m[1;33m([0m[0mframe[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m--> 216 [1;33m            [1;32mif[0m [0mself[0m[1;33m.[0m[0mquitting[0m[1;33m:[0m [1;32mraise[0m [0mBdbQuit[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    217 [1;33m        [1;32mreturn[0m [0mself[0m[1;33m.[0m[0mtrace_dispatch[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    218 [1;33m[1;33m[0m[0m
-[0m
-
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:13:06
+LiCSAtmo is being run for vesuvius_022D_tica at 15/02/2026 15:06:12
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
 All the required arguments were found in the dictionary.  
@@ -972,662 +745,22 @@ The cumulative time series was size (344, 151, 221) and has been downsampled in 
 Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
  
 Sources seclected to be discarded: [1]
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(403)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    401 [1;33m        [0mifgs_for_inv_r2[0m [1;33m=[0m [0mr3_to_r2[0m[1;33m([0m[0mifgs_for_inv_r3[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    402 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 403 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    404 [1;33m[1;33m[0m[0m
-[0m[1;32m    405 [1;33m        [1;31m# mean centre the time courses[0m[1;33m[0m[1;33m[0m[0m
-[0m
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(450)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    448 [1;33m[1;33m[0m[0m
-[0m[1;32m    449 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 450 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m[1;32m    452 [1;33m[1;33m[0m[0m
-[0m
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
 
 
 
 
 
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:17:07
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:17:07
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
+LiCSAtmo is being run for vesuvius_022D_tica at 15/02/2026 15:06:52
+All the required arguments were found in the dictionary.  
+All the required arguments were found in the dictionary.  
+All the required arguments were found in the dictionary.  
+LiCSAlert is opening a LiCSBAS directory.  
+Opening the LiCSBAS unfiltered results.  
+Starting to reference the LiCSBAS time series...Done.  
+Failed to open the E N U files (look vector components), but trying to continue anyway.
+Applying the mask that is consistent through all times to thetime series.  
+The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) 
 
 Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
  
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-Sources seclected to be discarded:Sources seclected to be discarded:  [1, 4][1, 4]
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(449)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    447 [1;33m[1;33m[0m[0m
-[0m[1;32m    448 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 449 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(449)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    447 [1;33m[1;33m[0m[0m
-[0m[1;32m    448 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 449 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:18:30
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:18:30
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:18:30
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:   [1, 4][1, 4][1, 4]
-
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(426)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    424 [1;33m            [0mS_corrected[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mdelete[0m[1;33m([0m[0mS[0m[1;33m,[0m [0msrc_n[0m[1;33m,[0m [0maxis[0m[1;33m=[0m[1;36m0[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    425 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 426 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    427 [1;33m[1;33m[0m[0m
-[0m[1;32m    428 [1;33m        [1;31m# reconstruct the time series (still mean centered)[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(426)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    424 [1;33m            [0mS_corrected[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mdelete[0m[1;33m([0m[0mS[0m[1;33m,[0m [0msrc_n[0m[1;33m,[0m [0maxis[0m[1;33m=[0m[1;36m0[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    425 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 426 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    427 [1;33m[1;33m[0m[0m
-[0m[1;32m    428 [1;33m        [1;31m# reconstruct the time series (still mean centered)[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(426)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    424 [1;33m            [0mS_corrected[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mdelete[0m[1;33m([0m[0mS[0m[1;33m,[0m [0msrc_n[0m[1;33m,[0m [0maxis[0m[1;33m=[0m[1;36m0[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    425 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 426 [1;33m        [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    427 [1;33m[1;33m[0m[0m
-[0m[1;32m    428 [1;33m        [1;31m# reconstruct the time series (still mean centered)[0m[1;33m[0m[1;33m[0m[0m
-[0m
-
-
-*********   AttributeError: 'numpy.ndarray' object has no attribute 'shap'. Did you mean: 'shape'?AttributeError: 'numpy.ndarray' object has no attribute 'shap'. Did you mean: 'shape'?AttributeError: 'numpy.ndarray' object has no attribute 'shap'. Did you mean: 'shape'?
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:22:02
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:22:02
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:22:02
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:22:02
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  Done.  
-
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:    [1, 4][1, 4][1, 4][1, 4]
-
-
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(452)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 452 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    453 [1;33m[1;33m[0m[0m
-[0m[1;32m    454 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(452)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 452 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    453 [1;33m[1;33m[0m[0m
-[0m[1;32m    454 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(452)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 452 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    453 [1;33m[1;33m[0m[0m
-[0m[1;32m    454 [1;33m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(452)[0;36mLiCSAtmo_correction[1;34m()[0m
-[1;32m    450 [1;33m[1;33m[0m[0m
-[0m[1;32m    451 [1;33m[1;33m[0m[0m
-[0m[1;32m--> 452 [1;33m    [0mpdb[0m[1;33m.[0m[0mset_trace[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m    453 [1;33m[1;33m[0m[0m
-[0m[1;32m    454 [1;33m[1;33m[0m[0m
-[0m
-
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:14
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:14
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:14
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:14
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:14
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  Done.  Done.  
-
-
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:     [1][1][1][1][1]
-
-
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.licsatmo, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs[0m
-
-
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:34
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:34
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:34
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:34
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:27:34
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  Done.  Done.  
-
-
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:     [1, 4][1, 4][1, 4][1, 4][1, 4]
-
-
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.data_importing, licsatmo.aux, licsatmo.plotting, licsalert.monitoring_functions, licsalert.data_exporting, licsalert.licsalert, licsalert.temporal, licsalert.aux, licsalert.plotting, licsalert.data_importing, licsalert.icasar, licsalert.icasar.aux, licsalert.icasar.icasar_funcs, licsatmo.licsatmo[0m
-
-
-
-****************************************************************************************************************************************************************
-
-
-
-Entering post mortem debugging...Entering post mortem debugging...Entering post mortem debugging...Entering post mortem debugging...
-
-
-
-****************************************************************************************************************************************************************
-
-
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(31)[0;36m<module>[1;34m()[0m
-[1;32m     29 [1;33m[1;32mimport[0m [0mlicsalert[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m---> 31 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     32 [1;33m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(31)[0;36m<module>[1;34m()[0m
-[1;32m     29 [1;33m[1;32mimport[0m [0mlicsalert[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m---> 31 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     32 [1;33m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(31)[0;36m<module>[1;34m()[0m
-[1;32m     29 [1;33m[1;32mimport[0m [0mlicsalert[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m---> 31 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     32 [1;33m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(31)[0;36m<module>[1;34m()[0m
-[1;32m     29 [1;33m[1;32mimport[0m [0mlicsalert[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m---> 31 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     32 [1;33m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m
-
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo[0m
-
-
-
-****************************************************************************************************************************************************************
-
-
-
-Entering post mortem debugging...Entering post mortem debugging...Entering post mortem debugging...Entering post mortem debugging...
-
-
-
-****************************************************************************************************************************************************************
-
-
-
-*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun*** WARNING: file '/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py' was edited, running stale code until the program is rerun
-
-
-
-> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(32)[0;36m<module>[1;34m()[0m
-[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m     31 [1;33m[1;32mimport[0m [0mlicsatmo[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m---> 32 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;33m[0m[0m
-[0m[1;32m     34 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(32)[0;36m<module>[1;34m()[0m
-[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m     31 [1;33m[1;32mimport[0m [0mlicsatmo[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m---> 32 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;33m[0m[0m
-[0m[1;32m     34 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(32)[0;36m<module>[1;34m()[0m
-[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m     31 [1;33m[1;32mimport[0m [0mlicsatmo[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m---> 32 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;33m[0m[0m
-[0m[1;32m     34 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m> [1;32m/home/matthew/university_work/04_atmospheric_correction/LiCSAtmo/LiCSAtmo_example.py[0m(32)[0;36m<module>[1;34m()[0m
-[1;32m     30 [1;33m[1;33m[0m[0m
-[0m[1;32m     31 [1;33m[1;32mimport[0m [0mlicsatmo[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m---> 32 [1;33m[1;32mfrom[0m [0mlicsatmo[0m [1;32mimport[0m [0mLiCSAtmo_correction[0m[1;33m[0m[1;33m[0m[0m
-[0m[1;32m     33 [1;33m[1;33m[0m[0m
-[0m[1;32m     34 [1;33m[1;31m#%% Things to set[0m[1;33m[0m[1;33m[0m[0m
-[0m
-
-
-
-[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.licsatmo[0m[4;33mReloaded modules[24m: licsalert, licsatmo, licsatmo.licsatmo[0m
-
-
-
-
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:32:13
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:32:13
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:32:13
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:32:13
-
-
-
-
-LiCSAtmo is being run for vesuvius_022D_tica at 10/02/2026 21:32:13
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  All the required arguments were found in the dictionary.  
-
-
-
-
-LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  LiCSAlert is opening a LiCSBAS directory.  
-
-
-
-
-Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  Opening the LiCSBAS unfiltered results.  
-
-
-
-
-Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Starting to reference the LiCSBAS time series...Done.  Done.  Done.  Done.  Done.  
-
-
-
-
-Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.Failed to open the E N U files (look vector components), but trying to continue anyway.
-
-
-
-
-Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  Applying the mask that is consistent through all times to thetime series.  
-
-
-
-
-The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) The cumulative time series was size (344, 151, 221) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) and has been downsampled in space to (344, 45, 66) 
-
-
-
-
-
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-Existing ICASAR results were found, so these will not be recalculated.  Delete ICASAR_results.pkl from the ICASAR_results directory to avoid this. 
- 
-
-
-
-
-Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:Sources seclected to be discarded:     [1, 4][1, 4][1, 4][1, 4][1, 4]
-
-
-
-
+Sources seclected to be discarded: [1, 4]

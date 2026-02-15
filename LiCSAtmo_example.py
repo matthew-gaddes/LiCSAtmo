@@ -33,7 +33,7 @@ import licsalert
 
 #%% Things to set
 
-np.random.seed(42)
+np.random.seed(41)
 
 
 
@@ -86,7 +86,6 @@ licsalert_settings = {"figure_type"         : 'both',                           
                       }
                       
 
-                     
 
 icasar_settings = {"sica_tica"              : 'tica',
                    "n_pca_comp_start"       : 6,                                                  
