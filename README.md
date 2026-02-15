@@ -59,7 +59,7 @@ licsbas_settings = {"filtered"              : False,              # Boolean, Tru
 
 # Example 1: Campi Flegrei
 
-They key figure is the interactive results explorer.  Every point is a source recovered by FastICA, projected into a 2D space (tSNE) and coloured by cluster (by HDBSCAN).  See Gaddes et al. 2019 for full details.  
+They key figure is the interactive results explorer, here sICA at Campi Flegrei.  Every point is a source recovered by FastICA, projected into a 2D space (tSNE) and coloured by cluster (by HDBSCAN).  See Gaddes et al. 2019 for full details.  
 Note that PC6 is greyed out as it's not being included.  IC0 is deformation.  
 
 <img width="1878" height="977" alt="04_clustering_and_manifold_results" src="https://github.com/user-attachments/assets/99ec87da-f027-45ea-aeb8-25567b82a73a" />
@@ -77,9 +77,17 @@ Time series for a pixel in the area of high topography.  Top left: original data
 <img width="1200" height="700" alt="original_reconstructed_ts_0" src="https://github.com/user-attachments/assets/322f168b-a4a1-4aa2-829f-a31014cd8b68" />
 
 # Example 2: Vesuvius
-
+Interactive results explorer for Vesuvius with tICA (note that spatial signals from the sICA example are now time signals.  Deformation is visible in IC0, and IC1 and IC4 look like a seasonal signal. 
 <img width="1878" height="977" alt="04_clustering_and_manifold_results" src="https://github.com/user-attachments/assets/1f8b5c91-3d54-4c19-8e06-c21a48ed5a65" />
+
+ICs in space and time.  IC0 looks like deformation in time, and IC1 and 4 have a slight seasonal signal in time.  
 <img width="1400" height="800" alt="03_ICA_sources_time" src="https://github.com/user-attachments/assets/4d4b7be0-8ab5-43b8-b766-97e30977f30c" />
+
+Comparison of the ICs with the DEM, and their use in time.  IC0 is linear in time, but also correlated with the DEM.  However, this is what we'd expect at a stratovolcano.  ICs 1 and 4 are also closely correlated with the DEM, but not in time.  Let's manually choose both as the signals to remove for the correction.  
 <img width="1500" height="700" alt="03_ICA_sources_correlations" src="https://github.com/user-attachments/assets/3a9fac33-5c03-4702-84b2-0d9761e5da67" />
+
+The time series after IC1 and 4 are removed, showing little change in the cumulative displacement obesrved.  
 <img width="1200" height="400" alt="original_reconstruction_residual" src="https://github.com/user-attachments/assets/27904fa8-a87f-4d16-badb-63fa14d03d12" />
+
+ATime series for a pixel in the area of high topography and deformaing region.  As per sICA at Campi Flegrei, top left shows the original data, which we interpret as subsidence with a seasonal signal.  Top right: LiCSAtmo correction, showing subsidence (which agrees with the GPS-derived displacements - see full paper), and bottom: comparison of the smoothed data.  
 <img width="1200" height="700" alt="original_reconstructed_ts_0" src="https://github.com/user-attachments/assets/af3b8d10-0634-403b-b4f7-0e9a1faa052e" />
